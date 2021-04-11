@@ -16,28 +16,26 @@ MOHAMAT NASRI BIN KARUDIN 1729731
 
 a. Whether or not the visitor is already registered to the system or not 
 
-b. Whether the book is available or not? 
+b. Whether there are outstanding charges on the visitor 
 
-c. Whether there are outstanding charges on the visitor 
-
-d. Whether the number of borrowed books is below 3 books 
+c. Whether the number of borrowed books is below 5 books
 
 
 3. State transition diagram
 
-Laccept = {TTFF}
+Laccept = {TFF}
 
-Lreject = {F, ,TF, TTT, TTFT}
+Lreject = {F, TT, TFT}
 
 
 4. State transition table
 
-| Condition                 	|   	|   	|   	|   	|   	|
-|---------------------------	|---	|---	|---	|---	|---	|
-| 1. Registered visitor?    	| F 	| T 	| T 	| T 	| T 	|
-| 2. Is the book available? 	|   	| F 	| T 	| T 	| T 	|
-| 3. Outstanding charge?    	|   	|   	| T 	| F 	| F 	|
-| 4. Beyond max book quota? 	|   	|   	|   	| T 	| F 	|
-| Action                    	|   	|   	|   	|   	|   	|
-| 1. Accept                 	|   	|   	|   	|   	| / 	|
-| 2. Reject                 	| / 	| / 	| / 	| / 	|   	|
+| Condition                 	|   	|   	|   	|   	|   	
+|---------------------------	|---	|---	|---	|---	|
+| 1. Registered visitor?    	| F 	| T 	| T 	| T 	| 
+| 2. Outstanding charge?  	  |   	| T 	| F 	| F   |
+| 3. Beyond max book quota?   |   	|   	| T 	| F 	| 
+|                            	|   	|   	|   	|    	| 
+| Action                    	|   	|   	|   	|   	|   	
+| 1. Accept                 	|   	|   	|   	| /  	| 
+| 2. Reject                 	| / 	| / 	| / 	|   	|   	
