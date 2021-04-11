@@ -22,12 +22,13 @@ Lreject = {F, ,TF, TTT, TTFT}
 
 
 4. State transition table
-    | Condition                 |   |   |   |   |   
-|---------------------------|---|---|---|---|---|
-| 1. Registered visitor?    | F | T | T | T | T |
-| 2. Is the book available? |   | F | T | T | T |
-| 3. Outstanding charge?    |   |   | T | F | F |
-| 4. Beyond max book quota? |   |   |   | T | F |
-| Action                    |   |   |   |   |   |
-| 1. Accept                 |   |   |   |   | / |
-| 2. Reject                 | / | / | / | / |   |
+
+| Condition                 	|   	|   	|   	|   	|   	|
+|---------------------------	|---	|---	|---	|---	|---	|
+| 1. Registered visitor?    	| F 	| T 	| T 	| T 	| T 	|
+| 2. Is the book available? 	|   	| F 	| T 	| T 	| T 	|
+| 3. Outstanding charge?    	|   	|   	| T 	| F 	| F 	|
+| 4. Beyond max book quota? 	|   	|   	|   	| T 	| F 	|
+| Action                    	|   	|   	|   	|   	|   	|
+| 1. Accept                 	|   	|   	|   	|   	| / 	|
+| 2. Reject                 	| / 	| / 	| / 	| / 	|   	|
