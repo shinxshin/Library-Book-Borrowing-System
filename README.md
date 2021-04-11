@@ -1,9 +1,13 @@
 # Library-Book-Borrowing-System
 
 CSC 4101 Section 1 – 2021 March
+
 Challenge 1 – State Transition Testing
+
 Group Members:
+
 AHMAD KHILFI BIN ZAINI 1723303
+
 MOHAMAT NASRI BIN KARUDIN 1729731
 
 1. Title: Library Book Borrowing System
@@ -11,8 +15,11 @@ MOHAMAT NASRI BIN KARUDIN 1729731
 2. Whether or not the system should accept the request to borrow books from the library depends on three factors:
 
 a. Whether or not the visitor is already registered to the system or not 
+
 b. Whether the book is available or not? 
+
 c. Whether there are outstanding charges on the visitor 
+
 d. Whether the number of borrowed books is below 3 books 
 
 
