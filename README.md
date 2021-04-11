@@ -19,6 +19,7 @@ d. Whether the number of borrowed books is below 3 books
 3. State transition diagram
 
 Laccept = {TTFF}
+
 Lreject = {F, ,TF, TTT, TTFT}
 
 
